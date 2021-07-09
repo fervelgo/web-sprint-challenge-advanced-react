@@ -16,7 +16,6 @@ function App() {
   const addToCart = (plant) => {
     setCart([...cart, plant]);
   };
-  //asdfds
 
   // remove a plant from the cart
   const removeFromCart = (plant) => {

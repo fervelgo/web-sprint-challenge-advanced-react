@@ -13,7 +13,7 @@ const useForm = () => {
         zip: "",
       };
 
-    const [showSuccessMessage, setShowSuccessMessage] = useState();
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
     const [values, setValues] = useState(initialValue);
 
     const handleChanges = (e) => {

@@ -1,9 +1,19 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import CheckoutForm from "./CheckoutForm";
 
 // Write up the two tests here and make sure they are testing what the title shows
 
-test("form header renders", () => {});
+test("form header renders", () => {
+    render(<CheckoutForm/>);
 
-test("form shows success message on submit with form details", () => {});
+    const headerElement = screen.queryByText(/Checkout Form/i);
+    
+    expect(headerElement).toBeInTheDocument();
+    expect(headerElement).toBeTruthy();
+    expect(headerElement).toHaveTextContent(/checkout form/i);
+});
+
+test("form shows success message on submit with form details", () => {
+
+});
