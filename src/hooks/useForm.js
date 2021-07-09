@@ -25,7 +25,7 @@ const useForm = () => {
     setShowSuccessMessage(true);
   };
 
-    return[showSuccessMessage, setShowSuccessMessage, handleChanges, handleSubmit];
+    return[handleSubmit, handleChanges, values, setValues,showSuccessMessage, setShowSuccessMessage];
 };
 
 export default useForm;

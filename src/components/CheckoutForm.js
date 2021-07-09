@@ -6,7 +6,7 @@ import useForm from "../hooks/useForm";
 // and replace the necessary stateful logic from CheckoutForm with the hook
 
 const CheckoutForm = (props) => {
-  const [handleSubmit, showSuccessMessage, setShowSuccessMessage, values, setValues, handleChanges] = useForm();
+  const [handleSubmit, handleChanges, values, setValues,showSuccessMessage, setShowSuccessMessage] = useForm();
 
   return (
     <>
